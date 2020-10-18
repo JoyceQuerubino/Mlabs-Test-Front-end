@@ -1,0 +1,83 @@
+.scheduling-page {
+  background: var(--color-background);
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.scheduling-page .configure {
+  background: red;
+}
+.scheduling-page .preview {
+  background: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.preview .card-preview {
+  width: 649px;
+  height: 643px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.preview .content-card-preview {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview .content-card-preview p {
+  max-width: 380px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+footer {
+  background: var(--color-menu);
+  height: 67px;
+  margin-top: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  margin-right: 52px;
+}
+
+.form-group .cancel {
+  background: none;
+  color: var(--color-blue);
+  margin-right: 16px;
+}
+
+.form-group .save {
+  background: none;
+  border: solid 1px var(--color-blue);
+  color: var(--color-blue);
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.form-group .schedule {
+  background: var(--color-blue);
+  color: white;
+  margin-right: 16px;
+}
