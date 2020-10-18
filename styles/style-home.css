@@ -1,0 +1,58 @@
+.home-page {
+  background: var(--color-background);
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-img img {
+  width: 375px;
+  height: 423px;
+
+  transition: all 0.5 ease;
+}
+
+.schedule-btn {
+  background: var(--orange-btn);
+  border: 1px solid #e0812c;
+  margin-top: 69px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.schedule-btn:hover {
+  transform: scale(1.1);
+}
+
+.schedule-btn a {
+  color: #ffffff;
+  line-height: 24px;
+}
+
+@media (max-width: 560px) {
+  .mini-menu {
+    display: block;
+  }
+  .menu-logo,
+  .user p {
+    display: none;
+  }
+
+  .home {
+    justify-content: flex-start;
+    margin-top: 85px;
+  }
+
+  .home-img img {
+    transform: scale(0.9);
+  }
+
+  .schedule-btn {
+    margin-top: 49;
+  }
+}

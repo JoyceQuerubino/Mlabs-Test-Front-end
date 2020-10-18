@@ -1,0 +1,141 @@
+:root {
+  --color-background: #f8f8f8;
+  --color-menu: #ffffff;
+  --orange-btn: #f2994a;
+  --border-orange-btn: #e0812c;
+  --color-blue: #2f80ed;
+  --color-border: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+body {
+  background: var(--color-background);
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--color-menu);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*MENU*/
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 18px 40px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user p {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+/*Mni-menu*/
+.mini-menu {
+  display: none;
+}
+
+#checkbox-mini-menu {
+  position: absolute;
+  opacity: 0;
+}
+.mini-menu label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 24px;
+}
+
+.mini-menu label span {
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: #000000;
+
+  transition: 0.25s ease-in-out;
+}
+
+.mini-menu label span:nth-child(1) {
+  top: 0;
+}
+
+.mini-menu label span:nth-child(2) {
+  top: 8px;
+}
+
+.mini-menu label span:nth-child(3) {
+  top: 16px;
+}
+
+#checkbox-mini-menu:checked + label span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-mini-menu:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+#checkbox-mini-menu:checked + label span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+/*Botoês*/
+.btn {
+  width: 184px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Cards*/
+.card {
+  background: var(--color-menu);
+  border-radius: 4px;
+  border: solid 1px var(--color-border);
+  box-sizing: border-box;
+}
+.title-card {
+  border-bottom: 1px solid var(--color-border);
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 17px;
+}
