@@ -7,11 +7,28 @@
   grid-template-columns: 1fr 1fr;
 }
 
+/*Cards de configrações*/
 .scheduling-page .configure {
   background: red;
+
+  display: flex;
+  flex-direction: column;
 }
-.scheduling-page .preview {
+
+.configure .social-media {
+  background: yellow;
+}
+
+.configure .text-post {
   background: blue;
+}
+
+.configure .upload-image {
+  background: green;
+}
+
+/*Card preview*/
+.scheduling-page .preview {
   display: flex;
   flex-direction: column;
   justify-content: center;
