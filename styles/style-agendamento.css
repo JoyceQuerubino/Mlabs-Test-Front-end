@@ -1,30 +1,90 @@
 .scheduling-page {
-  background: var(--color-background);
-  height: 100%;
-  width: 100%;
+  background: blue;
+
+  margin: 0 auto;
+
+  max-width: 1360px;
+  max-height: 643px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
 }
 
 /*Cards de configrações*/
 .scheduling-page .configure {
-  background: red;
-
   display: flex;
+
   flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 50px 0 40px 40px;
+
+  background: yellow;
+}
+
+.configure .top-set {
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .configure .social-media {
-  background: yellow;
+  width: 315px;
+  height: 110px;
+
+  margin-right: 40px;
+}
+
+.configure .social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: calc(100% - 35px);
+}
+
+.configure .social-media-icons a {
+  color: var(--color-black);
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  font-size: 16px;
+  text-align: center;
+
+  border: 1px solid var(--color-black);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.configure .publication-data {
+  width: 315px;
+  height: 110px;
+}
+
+.configure .data-hora {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: red;
+  height: calc(100% - 35px);
 }
 
 .configure .text-post {
   background: blue;
+  height: 33.33%;
 }
 
 .configure .upload-image {
   background: green;
+
+  width: 100%;
+  height: 33.33%;
 }
 
 /*Card preview*/
@@ -33,15 +93,20 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+
+  padding: 50px 0 40px 40px;
+
+  background: red;
 }
 
 .preview .card-preview {
-  width: 649px;
-  height: 643px;
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
+
+  width: 649px;
+  height: 643px;
 }
 
 .preview .content-card-preview {
