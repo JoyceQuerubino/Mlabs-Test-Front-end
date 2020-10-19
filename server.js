@@ -1,12 +1,18 @@
 const express = require("express");
-const server = express();
 const nunjucks = require("nunjucks");
+
+const server = express();
+
+// Adicionando CSS
+server.use(express.static("public"));
 
 // Adicionando html
 server.set("view engine", "html");
 
-nunjucks.configure("viwes", {
+nunjucks.configure("views", {
   express: server,
+  autoescape: false,
+  noCache: true,
 });
 
 //Criando porta
@@ -14,7 +20,12 @@ server.listen(5000, function () {
   console.log("server is running");
 });
 
-// Rota de teste
+// Rota index
 server.get("/", function (req, res) {
-  return res.send("Olá!");
+  return res.render("index");
+});
+
+// Rota da página de agendamento
+server.get("/agendamento", function (req, res) {
+  return res.render("agendamento");
 });
