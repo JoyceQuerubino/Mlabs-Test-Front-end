@@ -152,3 +152,9 @@ header {
   padding: 5px 0;
   padding-left: 17px;
 }
+
+.text {
+  color: var(--color-text-input);
+  font-size: 16px;
+  font-weight: 500;
+}
