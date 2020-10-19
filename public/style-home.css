@@ -13,8 +13,6 @@
 .home-img img {
   width: 375px;
   height: 423px;
-
-  transition: all 0.5 ease;
 }
 
 .schedule-btn {
