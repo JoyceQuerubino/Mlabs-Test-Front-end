@@ -67,6 +67,10 @@
   border: 1px solid var(--color-black);
 }
 
+.configure .enabled:focus {
+  outline-style: none;
+}
+
 .configure .enabled:hover {
   background: #fff3e0;
   border: 1px solid #ef9f2e;
