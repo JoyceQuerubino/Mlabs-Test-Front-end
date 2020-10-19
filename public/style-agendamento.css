@@ -33,7 +33,7 @@
   margin-right: 40px;
 }
 
-.configure .social-media-icons {
+.configure #social-media-icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,13 @@
   height: calc(100% - 35px);
   padding: 0 21px;
 }
-/*AQUI*/
+
+#social-media-icons .click-social-media {
+  outline-style: none;
+  background: linear-gradient(135deg, #ef9f2e 25%, #e02b4b 105.56%);
+  border: 1px solid #ef9f2e;
+  color: white;
+}
 
 .configure .btn-social-media {
   width: 33px;
@@ -70,22 +76,13 @@
   transition: all 0.3s ease;
 }
 
-.configure .enabled:focus {
-  outline-style: none;
-  background: linear-gradient(135deg, #ef9f2e 25%, #e02b4b 105.56%);
-  border: 1px solid #ef9f2e;
-  color: white;
-}
-
 .configure .disabled {
   color: var(--color-disabled);
-  border: 1px solid var(--color-disabled);
   background: var(--color-background-disabled);
+  border: 1px solid var(--color-disabled);
   cursor: auto;
-}
 
-.configure .disabled:focus {
-  outline-style: none;
+  pointer-events: none;
 }
 
 .configure .publication-data {

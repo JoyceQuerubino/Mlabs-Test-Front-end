@@ -1,6 +1,10 @@
-console.log("OIIIIII");
-let teste = document.querySelectorAll(".media");
+console.log("oiii");
 
-teste.addEventListener("click", function () {
-  console.log("Clicou");
-});
+//Adicionando click no botão de media social
+var btnSocialMedia = document.getElementsByClassName("btn-social-media");
+
+for (var i = 0; i < btnSocialMedia.length; i++) {
+  btnSocialMedia[i].onclick = function () {
+    this.classList.add("click-social-media");
+  };
+}
