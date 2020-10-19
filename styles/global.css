@@ -6,6 +6,7 @@
   --color-blue: #2f80ed;
   --color-border: #e0e0e0;
   --color-black: #333333;
+  --color-text-input: #828282;
 }
 
 * {
@@ -13,6 +14,15 @@
   padding: 0;
   border: 0;
   text-decoration: none;
+}
+
+input,
+textarea,
+seclect {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 body {
