@@ -3,6 +3,8 @@ const nunjucks = require("nunjucks");
 
 const server = express();
 
+const mediaSocial = require("./db/social-networks");
+
 // Adicionando CSS
 server.use(express.static("public"));
 
@@ -22,10 +24,10 @@ server.listen(5000, function () {
 
 // Rota index
 server.get("/", function (req, res) {
-  return res.render("index");
+  return res.render("about");
 });
 
 // Rota da página de agendamento
 server.get("/agendamento", function (req, res) {
-  return res.render("agendamento");
+  return res.render("agendamento", { items: mediaSocial });
 });
