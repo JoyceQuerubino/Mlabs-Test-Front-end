@@ -1,0 +1,24 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoyceQuerubino/Mlabs-Test-Front-end.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoyceQuerubino/Mlabs-Test-Front-end/issues"
+  },
+  "homepage": "https://github.com/JoyceQuerubino/Mlabs-Test-Front-end#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
