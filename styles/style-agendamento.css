@@ -83,9 +83,10 @@
   padding: 0 5px;
 
   border-radius: 4px;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-black);
 
   margin-right: 29px;
+  cursor: pointer;
 }
 
 .data-hora #time {
@@ -100,7 +101,8 @@
   padding: 0 10px;
 
   border-radius: 4px;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-black);
+  cursor: pointer;
 }
 
 .configure .card-text-post {
@@ -118,12 +120,17 @@
 }
 
 .text-aterea-form {
-  height: 100%;
+  height: calc(100% - 35px);
 
   display: flex;
-  background: yellow;
-  text-align: center;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-aterea-form textarea {
+  border: 1px solid var(--color-border-black);
+  border-radius: 4px;
+  cursor: text;
 }
 
 .configure .upload-image {
@@ -161,6 +168,8 @@
 }
 
 .preview .content-card-preview {
+  height: 100%;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
