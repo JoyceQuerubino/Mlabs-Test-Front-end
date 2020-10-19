@@ -11,12 +11,11 @@
                                     <p>Redes sociais</p>
                                 </div>
                                     <div class="social-media-icons">
-                                        <a class="media" href="#"><i class="fab fa-instagram"></i></a>
-                                        <a class="media" href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a class="media" href="#"><i class="fab fa-youtube"></i></a>
-                                        <a class="media" href="#"><i class="fab fa-pinterest"></i></a>
-                                        <a class="media" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="media" href="#"><i class="fab fa-facebook"></i></a>
+                        
+                                        {% for item in items %}
+                                        <button class="btn-social-media {{item.status}} {{item.class}} " id="{{item.id}}"></button>
+                                        {%endfor%}
+
                                     </div>
                             </div>
                             

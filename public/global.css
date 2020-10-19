@@ -8,6 +8,8 @@
   --color-border-black: #949494;
   --color-black: #333333;
   --color-text-input: #828282;
+  --color-background-disabled: #dddddd;
+  --color-disabled: #989898;
 }
 
 * {

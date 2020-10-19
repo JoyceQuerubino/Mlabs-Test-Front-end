@@ -41,21 +41,27 @@
   height: calc(100% - 35px);
   padding: 0 21px;
 }
+/*AQUI*/
 
-.configure .social-media-icons a {
-  color: var(--color-black);
+.configure .btn-social-media {
   width: 33px;
   height: 33px;
   line-height: 33px;
   font-size: 16px;
   text-align: center;
+  cursor: pointer;
 
-  border: 1px solid var(--color-black);
   border-radius: 50%;
   margin: 0 auto;
 }
 
-.configure .social-media-icons a:hover {
+.configure .enabled {
+  background: var(--color-background);
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+
+.configure .enabled:hover {
   background: #fff3e0;
   border: 1px solid #ef9f2e;
   color: #ef9f2e;
@@ -64,10 +70,22 @@
   transition: all 0.3s ease;
 }
 
-.configure .social-media-icons a:focus {
+.configure .enabled:focus {
+  outline-style: none;
   background: linear-gradient(135deg, #ef9f2e 25%, #e02b4b 105.56%);
   border: 1px solid #ef9f2e;
   color: white;
+}
+
+.configure .disabled {
+  color: var(--color-disabled);
+  border: 1px solid var(--color-disabled);
+  background: var(--color-background-disabled);
+  cursor: auto;
+}
+
+.configure .disabled:focus {
+  outline-style: none;
 }
 
 .configure .publication-data {
