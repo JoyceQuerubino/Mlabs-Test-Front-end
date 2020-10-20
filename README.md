@@ -1,6 +1,6 @@
 # Teste front-end Junior da Mlabs
 
-O projeto desenvolvido é um teste do processo seletivo para desenvolvedor Front-end Junior da empresa**[mLabs](https://www.mlabs.com.br//)**, cujo objetivo é criar interfaces que possibilitem o usuário agendar uma publicação em algumas redes sociais, além de permitir que ele possa visualizar uma lista com os agendamentos por status de publicação.
+O projeto desenvolvido é um teste do processo seletivo para desenvolvedor Front-end Junior da empresa **[mLabs](https://www.mlabs.com.br//)**, cujo objetivo é criar interfaces que possibilitem o usuário agendar uma publicação em algumas redes sociais, além de permitir que ele possa visualizar uma lista com os agendamentos por status de publicação.
 
 # O projeto
 
