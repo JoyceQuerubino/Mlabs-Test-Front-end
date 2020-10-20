@@ -12,6 +12,13 @@
   --color-text-input: #828282;
   --color-background-disabled: #dddddd;
   --color-disabled: #989898;
+  --color-logo-istagram: linear-gradient(
+    187.5deg,
+    #ef2ea2 5.81%,
+    #e0a22b 109.34%
+  );
+  --color-border-instagram: #ef2ea2;
+  --color-logo-linkedin: #2e92ef;
 }
 
 * {
