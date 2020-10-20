@@ -1,7 +1,7 @@
 .home-page {
-  background: var(--color-background);
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
+  background: var(--color-background);
 
   display: flex;
 
@@ -18,9 +18,9 @@
 .schedule-btn {
   background: var(--orange-btn);
   border: 1px solid #e0812c;
+  text-align: center;
   margin-top: 69px;
   cursor: pointer;
-  text-align: center;
 }
 
 .schedule-btn:hover {

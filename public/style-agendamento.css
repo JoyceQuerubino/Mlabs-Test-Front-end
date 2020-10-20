@@ -1,7 +1,6 @@
 .scheduling-page {
-  margin: 50px auto;
-
   max-width: 1360px;
+  margin: 50px auto;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -21,8 +20,8 @@
 .configure .top-set {
   width: 100%;
   max-height: 214.33%;
-  display: flex;
 
+  display: flex;
   justify-content: space-between;
 }
 
@@ -34,19 +33,19 @@
 }
 
 .configure #social-media-icons {
+  height: calc(100% - 35px);
+  padding: 0 21px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-
-  height: calc(100% - 35px);
-  padding: 0 21px;
 }
 
 #social-media-icons .click-social-media {
-  outline-style: none;
+  color: white;
   background: linear-gradient(135deg, #ef9f2e 25%, #e02b4b 105.56%);
   border: 1px solid #ef9f2e;
-  color: white;
+  outline-style: none;
 }
 
 .configure .btn-social-media {
@@ -54,17 +53,16 @@
   height: 33px;
   line-height: 33px;
   font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-
   border-radius: 50%;
+  text-align: center;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .configure .enabled {
-  background: var(--color-background);
   color: var(--color-black);
   border: 1px solid var(--color-black);
+  background: var(--color-background);
 }
 
 .configure .enabled:focus {
@@ -72,9 +70,9 @@
 }
 
 .configure .enabled:hover {
+  color: #ef9f2e;
   background: #fff3e0;
   border: 1px solid #ef9f2e;
-  color: #ef9f2e;
 
   transform: scale(1.1);
   transition: all 0.3s ease;
@@ -85,7 +83,6 @@
   background: var(--color-background-disabled);
   border: 1px solid var(--color-disabled);
   cursor: auto;
-
   pointer-events: none;
 }
 
@@ -95,48 +92,42 @@
 }
 
 .configure .data-hora {
-  height: 100%;
+  height: calc(100% - 35px);
+  background-color: red;
+  padding: 0 21px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  background-color: red;
-  height: calc(100% - 35px);
-  padding: 0 21px;
 }
 
 .data-hora #date {
   width: 124px;
   height: 42px;
-
   color: var(--color-text-input);
+  border-radius: 4px;
+  border: 1px solid var(--color-border-black);
+  margin-right: 29px;
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 5px;
-
-  border-radius: 4px;
-  border: 1px solid var(--color-border-black);
-
-  margin-right: 29px;
-  cursor: pointer;
 }
 
 .data-hora #time {
   width: 124px;
   height: 42px;
-
   color: var(--color-text-input);
+  border-radius: 4px;
+  border: 1px solid var(--color-border-black);
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 10px;
-
-  border-radius: 4px;
-  border: 1px solid var(--color-border-black);
-  cursor: pointer;
 }
 
 .configure .card-text-post {
@@ -146,7 +137,6 @@
 .configure .content-card-post {
   width: 671px;
   height: 214px;
-
   margin-top: 40px;
 }
 
@@ -161,9 +151,8 @@
 .text-aterea-form textarea {
   border: 1px solid var(--color-border-black);
   border-radius: 4px;
-  cursor: text;
-
   padding: 15px;
+  cursor: text;
 }
 
 .configure .upload-image {
@@ -173,7 +162,6 @@
 .card-upload-image {
   width: 671px;
   height: 239px;
-
   margin-top: 40px;
 }
 .card-upload-image img {
@@ -182,6 +170,7 @@
 
 .content-upload-image {
   height: calc(100% - 35px);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,10 +182,10 @@
 }
 
 .input-label-file {
-  border: 1px solid var(--color-blue);
-  color: var(--color-blue);
   width: 181px;
   height: 36px;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
   margin-top: 25px;
   cursor: pointer;
 
@@ -248,6 +237,7 @@
 }
 
 .content-post .post-instagram {
+  border: 1px solid var(--color-border-medium);
 }
 
 .post-instagram img {
@@ -265,16 +255,17 @@
 }
 
 .post-instagram .top-post-instagram p {
+  color: black;
   padding-left: 12px;
 }
 
 .top-post-instagram .logo-instagram {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  color: white;
   background: linear-gradient(187.5deg, #ef2ea2 5.81%, #e0a22b 109.34%);
   border: 1px solid #ef2ea2;
-  color: white;
+  border-radius: 50%;
 
   display: flex;
   align-items: center;
@@ -285,9 +276,13 @@
   font-size: 24px;
 }
 
-.bottom-post-instagram {
+.post-instagram .bottom-post-instagram {
   height: 82px;
   padding: 0 14px;
+}
+
+.post-instagram .bottom-post-instagram p {
+  color: var(--color-text-second);
 }
 
 .post-instagram .icons-post-instagram {
@@ -306,8 +301,8 @@
 }
 
 footer {
-  background: var(--color-menu);
   height: 67px;
+  background: var(--color-menu);
   margin-top: auto;
 
   display: flex;
@@ -316,29 +311,29 @@ footer {
 
 .form-group {
   width: 100%;
+  margin-right: 52px;
+
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-
-  margin-right: 52px;
 }
 
 .form-group .cancel {
-  background: none;
   color: var(--color-blue);
+  background: none;
   margin-right: 16px;
 }
 
 .form-group .save {
+  color: var(--color-blue);
   background: none;
   border: solid 1px var(--color-blue);
-  color: var(--color-blue);
   text-decoration: none;
   margin-right: 16px;
 }
 
 .form-group .schedule {
-  background: var(--color-blue);
   color: white;
+  background: var(--color-blue);
   margin-right: 16px;
 }
