@@ -1,19 +1,20 @@
-//Adicionando click no botão de media social
-var btnSocialMedia = document.getElementsByClassName("btn-social-media");
+// Ações dos botões de redes sociais
+var btnInstagram = document.getElementById("1");
+var btnLinkedin = document.getElementById("2");
+var postInstagram = document.getElementById("post-instagram");
+//postLinkedin
+var esperando = document.getElementById("waiting-post");
 
-for (var i = 0; i < btnSocialMedia.length; i++) {
-  btnSocialMedia[i].onclick = function () {
-    //removendo
-    var removeClass = btnSocialMedia[0];
-    while (removeClass) {
-      if (removeClass.tagName === "BUTTON") {
-        //remove
-        removeClass.classList.remove("click-social-media");
-      }
-      //passando para o próximo
-      removeClass = removeClass.nextSibling;
-    }
+btnInstagram.onclick = function () {
+  this.classList.toggle("click-social-media");
+  btnLinkedin.classList.toggle("btn-disabled");
+  postInstagram.classList.toggle("post-on");
+  esperando.classList.toggle("off");
+};
 
-    this.classList.add("click-social-media");
-  };
-}
+btnLinkedin.onclick = function () {
+  this.classList.toggle("click-social-media");
+  btnInstagram.classList.toggle("btn-disabled");
+  postInstagram.classList.toggle("post-on");
+  esperando.classList.toggle("off");
+};

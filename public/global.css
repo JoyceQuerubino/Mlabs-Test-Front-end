@@ -141,6 +141,19 @@ header {
   align-items: center;
 }
 
+/*AQUI*/
+.post-on {
+  display: block !important;
+}
+
+.off {
+  display: none;
+}
+.btn-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /*Cards*/
 .card {
   background: var(--color-menu);

@@ -238,6 +238,7 @@
 
 .content-post .post-instagram {
   border: 1px solid var(--color-border-medium);
+  display: none;
 }
 
 .post-instagram img {
@@ -248,8 +249,6 @@
 .post-instagram .top-post-instagram {
   height: 64px;
   padding-left: 13px;
-  margin-bottom: 15px;
-
   display: flex;
   align-items: center;
 }
