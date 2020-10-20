@@ -172,7 +172,18 @@
   height: calc(100% - 35px);
 
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-upload {
+  width: 639px;
+  height: 178px;
+  border: 1px dashed var(--color-border-medium);
+
+  display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
