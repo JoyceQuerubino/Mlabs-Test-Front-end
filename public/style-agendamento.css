@@ -242,6 +242,69 @@
   text-align: center;
 }
 
+.content-post {
+  width: 368px;
+  height: 535px;
+}
+
+.content-post .post-instagram {
+}
+
+.post-instagram img {
+  width: 100%;
+  height: 368px;
+}
+
+.post-instagram .top-post-instagram {
+  height: 64px;
+  padding-left: 13px;
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+}
+
+.post-instagram .top-post-instagram p {
+  padding-left: 12px;
+}
+
+.top-post-instagram .logo-instagram {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(187.5deg, #ef2ea2 5.81%, #e0a22b 109.34%);
+  border: 1px solid #ef2ea2;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-post-instagram .logo-instagram a {
+  font-size: 24px;
+}
+
+.bottom-post-instagram {
+  height: 82px;
+  padding: 0 14px;
+}
+
+.post-instagram .icons-post-instagram {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-instagram .icons-post-instagram img {
+  width: 22px;
+  height: 24px;
+}
+
+.icons-post-instagram .left-icons img {
+  margin-top: 5px;
+  margin-right: 18px;
+}
+
 footer {
   background: var(--color-menu);
   height: 67px;
