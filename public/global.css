@@ -140,8 +140,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
-/*AQUI*/
 .post-on {
   display: block !important;
 }
@@ -175,4 +173,8 @@ header {
   color: var(--color-text-input);
   font-size: 16px;
   font-weight: 500;
+}
+
+.text-post {
+  color: var(--color-text-second);
 }
