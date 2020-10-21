@@ -22,9 +22,13 @@ E é possível ver a versão através do link:
 
 O site é composto por 3 diferentes páginas:
 
-- **Página de Home**: okokok
-- **Página de agendamento**: okokokoko
-- **Página de listagem de agendamento**: okokokok
+- **Página de Home**: Essa página apresenta uma ilustração de agendamento e um botão que redireciona o usuário para a página de agendamento.
+- **Página de agendamento**: Apresenta algumas configurações para o usuário efetuar as postagens, como a rede social desejada, um preview da postagem, o texto e a seleção da imagem. Como restrição o usuário, só pode selecionar uma rede social por vez, sendo que estão habilitadas apenas as opções de 'instagram' e 'Linkedin. e após efetuar todas as configurações e clicar no botão de 'Agendar', o usuário é redirecionado a página de listagem.
+- **Página de listagem de agendamento**: Essa página exibe uma listagem com todos os agendamentos realizados pelo usuário e algumas informações como: data, status, preview, etc.
+
+<h1 align = center>
+    <img src="/public/images/imagem.png">
+</h1>
 
 ## 🛠 Tecnologias
 
