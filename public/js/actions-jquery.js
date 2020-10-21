@@ -5,3 +5,25 @@ $(document).ready(function () {
     $("#label-span").text(filename);
   });
 });
+
+//Calendario
+$(function () {
+  $("#date").datepicker({
+    dateFormat: "dd-mm-yy",
+    dayNamesMin: ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SAB"],
+    monthNames: [
+      "Janeiro",
+      "Fevereiro",
+      "Março",
+      "Abril",
+      "Maio",
+      "Junho",
+      "Julho",
+      "Agosto",
+      "Setembro",
+      "Outubro",
+      "Novembro",
+      "Dezembro",
+    ],
+  });
+});

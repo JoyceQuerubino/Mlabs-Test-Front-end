@@ -93,7 +93,6 @@
 
 .configure .data-hora {
   height: calc(100% - 35px);
-  background-color: red;
   padding: 0 21px;
 
   display: flex;
@@ -101,14 +100,27 @@
   justify-content: space-between;
 }
 
-.data-hora #date {
-  width: 124px;
+.card-date {
+  width: 144px;
   height: 42px;
-  color: var(--color-text-input);
   border-radius: 4px;
   border: 1px solid var(--color-border-black);
   margin-right: 29px;
-  cursor: pointer;
+  cursor: text;
+  padding: 8px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.card-date img {
+  margin-right: 5px;
+}
+
+.data-hora #date {
+  width: 85px;
+  height: 25px;
+  color: var(--color-text-input);
 
   display: flex;
   justify-content: center;
@@ -128,6 +140,43 @@
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+}
+
+/*Calendario*/
+.ui-state-default,
+.ui-widget-header,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: none !important;
+  background: none !important;
+  font-family: "Poppins", sans-serif !important;
+  color: #172b4d !important;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+  text-align: center !important;
+}
+
+.ui-widget-content {
+  padding: 15px !important;
+  margin-top: 25px !important;
+  border: none !important;
+  background: white !important;
+  color: #172b4d !important;
+  filter: drop-shadow(0px 3px 5px rgba(9, 30, 66, 0.2)) !important;
+}
+
+.ui-widget-header {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 21px !important;
+  margin-bottom: 15px !important;
+}
+
+.ui-datepicker table {
+  font-size: 12px !important;
+  line-height: 18px !important;
 }
 
 .configure .card-text-post {

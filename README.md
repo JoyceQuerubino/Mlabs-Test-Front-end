@@ -23,7 +23,7 @@ E é possível ver a versão através do link:
 O site é composto por 3 diferentes páginas:
 
 - **Página de Home**: Essa página apresenta uma ilustração de agendamento e um botão que redireciona o usuário para a página de agendamento.
-- **Página de agendamento**: Apresenta algumas configurações para o usuário efetuar as postagens, como a rede social desejada, um preview da postagem, o texto e a seleção da imagem. Como restrição o usuário, só pode selecionar uma rede social por vez, sendo que estão habilitadas apenas as opções de 'instagram' e 'Linkedin. e após efetuar todas as configurações e clicar no botão de 'Agendar', o usuário é redirecionado a página de listagem.
+- **Página de agendamento**: Apresenta algumas configurações para o usuário efetuar as postagens, como a rede social desejada, um preview da postagem, o texto e a seleção da imagem. Como restrição o usuário, só pode selecionar uma rede social por vez, sendo que estão habilitadas apenas as opções de 'Instagram' e 'Linkedin. E após efetuar todas as configurações e clicar no botão de 'Agendar', o usuário é redirecionado a página de listagem.
 - **Página de listagem de agendamento**: Essa página exibe uma listagem com todos os agendamentos realizados pelo usuário e algumas informações como: data, status, preview, etc.
 
 <h1 align = center>
@@ -42,7 +42,8 @@ O site é composto por 3 diferentes páginas:
 
 ### 📚 Bibliotecas utilizadas
 
-- Para adicionar os emoticons, utilizei a biblioteca **[Emoji Picker](https://github.com/OneSignal/emoji-picker)**
+- Para adicionar os emoticons, utilizei a biblioteca **[EmojioneArea](https://github.com/mervick/emojionearea)**.
+  Os arquivos dessa biblioteca podem ser vistos na pasta **[libraryEmoticons]()**
 - Para estilizar os campos de calendário e data, utilizei a biblioteca **[JQuery UI](https://jqueryui.com/)**
 
 ## 🚀 Como executar o projeto
