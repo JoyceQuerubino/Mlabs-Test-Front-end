@@ -6,13 +6,13 @@ O layout do projeto foi disponibilizado através do Figma, pelo **[link](https:/
 
 E é possível ver a versão através do link:
 
-### 📱 Preview Mobile
+## 📱 Preview Mobile
 
 <h1 align = center>
     <img src="/public/images/imagem.png">
 </h1>
 
-### 🖥 Preview Web
+## 🖥 Preview Web
 
 <h1 align = center>
     <img src="public/images/imagem.png">
@@ -38,6 +38,9 @@ O site é composto por 3 diferentes páginas:
 
 ### 📚 Bibliotecas utilizadas
 
+- Para adicionar os emoticons, utilizei a biblioteca **[Emoji Picker](https://github.com/OneSignal/emoji-picker)**
+- Para estilizar os campos de calendário e data, utilizei a biblioteca **[JQuery UI](https://jqueryui.com/)**
+
 ## 🚀 Como executar o projeto
 
 ```bash
@@ -46,13 +49,9 @@ O site é composto por 3 diferentes páginas:
 git clone https://github.com/JoyceQuerubino/Mlabs-Test-Front-end
 
 # Instale as dependências
-# instalando npm
 npm init -y
-
 npm install express
-
 npm install -D nodemon
-
 npm install nunjucks
 
 # Executando o servidor
@@ -62,7 +61,7 @@ npm start
 
 ```
 
-No projeto, eu utilizei a template engine Nunjucks para reutilização de códigos do layout. E para melhorar a visualização do código é interessante adicionar a extenção do Visual Studio Code **(Nunjucks Template Formatter)[https://marketplace.visualstudio.com/items?itemName=okitavera.vscode-nunjucks-formatter]** e adicionar a seguinte configuração:
+No projeto, eu utilizei a template engine Nunjucks para reutilização de códigos do layout. E para melhorar a visualização do código é interessante adicionar a extenção do Visual Studio Code **[Nunjucks Template Formatter](https://marketplace.visualstudio.com/items?itemName=okitavera.vscode-nunjucks-formatter)** e adicionar a seguinte configuração:
 
 1.  comand + shift + p
 2.  pesquise pela opção: "Open Settings (JASON)"
