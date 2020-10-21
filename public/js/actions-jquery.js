@@ -9,7 +9,7 @@ $(document).ready(function () {
 //Calendario
 $(function () {
   $("#date").datepicker({
-    dateFormat: "dd-mm-yy",
+    dateFormat: "dd/mm/yy",
     dayNamesMin: ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SAB"],
     monthNames: [
       "Janeiro",

@@ -1,20 +1,24 @@
 .scheduling-page {
-  max-width: 1360px;
   margin: 50px auto;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 /*Cards de configrações*/
 .scheduling-page .configure {
-  height: 100%;
-  padding: 50px 0 40px 40px;
+  width: 50%;
+  max-width: 671px;
+
+  padding: 40px;
 
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  background: red;
 }
 
 .configure .top-set {
@@ -52,7 +56,7 @@
   width: 33px;
   height: 33px;
   line-height: 33px;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 50%;
   text-align: center;
   margin: 0 auto;
@@ -87,11 +91,11 @@
 }
 
 .configure .publication-data {
-  width: 315px;
+  max-width: 100%;
   height: 110px;
 }
 
-.configure .data-hora {
+.configure .date-time {
   height: calc(100% - 35px);
   padding: 0 21px;
 
@@ -101,12 +105,12 @@
 }
 
 .card-date {
-  width: 144px;
+  max-width: 100%;
+
   height: 42px;
   border-radius: 4px;
   border: 1px solid var(--color-border-black);
   margin-right: 29px;
-  cursor: text;
   padding: 8px;
 
   display: flex;
@@ -117,8 +121,8 @@
   margin-right: 5px;
 }
 
-.data-hora #date {
-  width: 85px;
+.date-time #date {
+  width: 84px;
   height: 25px;
   color: var(--color-text-input);
 
@@ -128,8 +132,8 @@
   padding: 0 5px;
 }
 
-.data-hora #time {
-  width: 124px;
+.date-time #time {
+  width: 120px;
   height: 42px;
   color: var(--color-text-input);
   border-radius: 4px;
@@ -139,7 +143,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 /*Calendario*/
@@ -178,19 +182,17 @@
   font-size: 12px !important;
   line-height: 18px !important;
 }
-
-.configure .card-text-post {
-  max-height: 214.33%;
+.card-text-post {
+  width: 100%;
 }
-
 .configure .content-card-post {
-  width: 671px;
+  max-width: 100%;
   height: 214px;
   margin-top: 40px;
 }
 
 .text-aterea-form {
-  height: calc(100% - 35px);
+  padding: 20px;
 
   display: flex;
   justify-content: center;
@@ -198,6 +200,8 @@
 }
 
 .text-aterea-form textarea {
+  width: 100%;
+
   border: 1px solid var(--color-border-black);
   border-radius: 4px;
   padding: 15px;
@@ -205,20 +209,17 @@
 }
 
 .configure .upload-image {
-  max-height: 214.33%;
 }
 
 .card-upload-image {
-  width: 671px;
-  height: 239px;
   margin-top: 40px;
 }
+
 .card-upload-image img {
-  margin-bottom: 13px;
 }
 
 .content-upload-image {
-  height: calc(100% - 35px);
+  padding: 20px;
 
   display: flex;
   align-items: center;
@@ -226,7 +227,7 @@
 }
 
 .border-upload {
-  width: 639px;
+  width: 100%;
   height: 178px;
   border: 1px dashed var(--color-border-medium);
 
@@ -256,17 +257,21 @@
 
 /*Card preview*/
 .scheduling-page .preview {
+  width: 50%;
+  max-width: 671px;
   height: 100%;
-  padding: 50px 40px 40px 40px;
+  padding: 40px;
+  margin: 0 auto;
 
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+
+  background: blue;
 }
 
 .preview .card-preview {
   width: 649px;
-  height: 643px;
+  height: 100%;
   margin: 0 auto;
 
   display: flex;
@@ -274,11 +279,11 @@
 }
 
 .preview .content-card-preview {
-  height: 100%;
-
   display: flex;
+
+  margin-top: auto;
+
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -310,6 +315,7 @@
   height: 64px;
   padding-left: 13px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -395,8 +401,8 @@
 }
 
 .bottom-post-linkedin .line-bottom p {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
   font-weight: 400;
   margin-left: 14px;
 }
@@ -443,4 +449,28 @@ footer {
   color: white;
   background: var(--color-blue);
   margin-right: 16px;
+}
+
+/*Responsividade*/
+@media (max-width: 1190px) {
+  .scheduling-page {
+    margin: 50px auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .scheduling-page .configure {
+    width: 100%;
+    max-height: 55%;
+  }
+  .scheduling-page .preview {
+    width: 100%;
+    max-height: 45%;
+  }
+  .upload-image {
+    width: 100%;
+  }
 }
