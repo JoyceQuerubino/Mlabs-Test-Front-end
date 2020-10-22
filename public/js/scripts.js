@@ -25,14 +25,21 @@ const modalOverlay = document.querySelector(".modal-overlay");
 const btnModal = document.querySelector(".btn-preview-post");
 const btnCloseModal = document.querySelector(".close-icon");
 
+const instagramModal = document.getElementById("post-instagram2");
+const linkedinModal = document.getElementById("post-linkedin2");
+
 btnModal.onclick = function () {
   if (btnInstagram.classList.contains("click-social-media")) {
     modalOverlay.classList.add("active");
+    instagramModal.classList.toggle("post-on");
   } else if (btnLinkedin.classList.contains("click-social-media")) {
     modalOverlay.classList.add("active");
+    linkedinModal.classList.toggle("post-on");
   }
 };
 
 btnCloseModal.onclick = function () {
   modalOverlay.classList.remove("active");
+  linkedinModal.classList.remove("post-on");
+  instagramModal.classList.remove("post-on");
 };
