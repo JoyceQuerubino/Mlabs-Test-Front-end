@@ -56,7 +56,7 @@ btnCloseModal.onclick = function () {
   instagramModal.classList.remove("post-on");
 };
 
-// Ação do botão agendar
+// Requisitos para habilitar o botão agendar
 const form = document.querySelector(".date-time");
 const btnSchedule = document.getElementById("schedule");
 const date = document.getElementById("date");
@@ -68,3 +68,17 @@ form.addEventListener("input", () => {
     btnSchedule.removeAttribute("disabled");
   }
 });
+
+//Ação do botão agendar
+
+const alertModal = document.querySelector(".alert-modal");
+const btnOK = document.querySelector(".btn-ok");
+
+btnSchedule.onclick = function () {
+  alertModal.classList.add("active");
+};
+
+// Direcionamento para a pagina de listagem
+btnOK.onclick = function () {
+  window.location.href = "/listagem";
+};

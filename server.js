@@ -35,3 +35,8 @@ server.get("/agendamento", function (req, res) {
     dados: postSocialMedia,
   });
 });
+
+// Rota da página de listagem
+server.get("/listagem", function (req, res) {
+  return res.render("listagem");
+});
