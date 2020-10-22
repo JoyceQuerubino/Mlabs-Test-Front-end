@@ -25,5 +25,7 @@ $(function () {
       "Novembro",
       "Dezembro",
     ],
+    required: true,
+    showOtherMonths: true,
   });
 });
