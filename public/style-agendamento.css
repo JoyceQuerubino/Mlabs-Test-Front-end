@@ -432,7 +432,8 @@ footer {
 }
 
 .form-group {
-  width: 77rem;
+  width: 81rem;
+  padding: 0 30px;
   display: flex;
   justify-content: flex-end;
 }
@@ -610,5 +611,19 @@ footer {
   }
   footer {
     padding: 20px 40px;
+  }
+  .save span {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .form-group {
+    padding: 0;
+  }
+  .form-group .btn {
+    width: 108px;
+    height: 28px;
+    font-size: 12px;
   }
 }
