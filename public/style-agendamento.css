@@ -17,8 +17,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
-  background: red;
 }
 
 .configure .top-set {
@@ -30,15 +28,13 @@
 }
 
 .configure .social-media {
-  width: 315px;
-  height: 110px;
-
-  margin-right: 40px;
+  width: 46%;
 }
 
 .configure #social-media-icons {
   height: calc(100% - 35px);
-  padding: 0 21px;
+  margin: 0 auto;
+  padding: 0.5rem;
 
   display: flex;
   align-items: center;
@@ -61,6 +57,10 @@
   text-align: center;
   margin: 0 auto;
   cursor: pointer;
+}
+
+.configure .btn-social-media:nth-child(-n + 5) {
+  margin-right: 0.5em;
 }
 
 .configure .enabled {
@@ -91,7 +91,7 @@
 }
 
 .configure .publication-data {
-  max-width: 100%;
+  width: 46%;
   height: 110px;
 }
 
@@ -188,7 +188,7 @@
 .configure .content-card-post {
   max-width: 100%;
   height: 214px;
-  margin-top: 40px;
+  margin-top: 2.45rem;
 }
 
 .text-aterea-form {
@@ -212,7 +212,7 @@
 }
 
 .card-upload-image {
-  margin-top: 40px;
+  margin-top: 2.45rem;
 }
 
 .card-upload-image img {
@@ -236,6 +236,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 #file {
@@ -255,6 +256,10 @@
   justify-content: center;
 }
 
+.btn-resp-preview-post {
+  display: none;
+}
+
 /*Card preview*/
 .scheduling-page .preview {
   width: 50%;
@@ -265,8 +270,6 @@
 
   display: flex;
   flex-wrap: wrap;
-
-  background: blue;
 }
 
 .preview .card-preview {
@@ -279,13 +282,12 @@
 }
 
 .preview .content-card-preview {
+  height: 100%;
   display: flex;
 
-  margin-top: auto;
-
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .waiting-content {
   text-align: center;
@@ -414,21 +416,19 @@
 }
 
 footer {
+  width: 100%;
   height: 67px;
   background: var(--color-menu);
-  margin-top: auto;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .form-group {
   width: 100%;
-  margin-right: 52px;
-
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
 }
 
 .form-group .cancel {
@@ -448,14 +448,43 @@ footer {
 .form-group .schedule {
   color: white;
   background: var(--color-blue);
+}
+
+.form-group .schedule:nth-child(-n + 2) {
   margin-right: 16px;
 }
 
-/*Responsividade*/
-@media (max-width: 1190px) {
-  .scheduling-page {
-    margin: 50px auto;
+/*AQUIIIIIIIIIIIIIIIIII*/
+.modal-overlay {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+}
 
+.div-branca {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-modal {
+  height: 50px;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+/*FIMMMMMMMMMM*/
+
+/*Responsividade*/
+@media (max-width: 1200px) {
+  .scheduling-page {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -465,12 +494,82 @@ footer {
   .scheduling-page .configure {
     width: 100%;
     max-height: 55%;
+    padding-top: 0;
   }
   .scheduling-page .preview {
     width: 100%;
     max-height: 45%;
+    padding-top: 0;
+    padding-bottom: 10px;
   }
   .upload-image {
     width: 100%;
+  }
+  footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .form-group {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 670px) {
+  .scheduling-page .configure {
+    width: 550px;
+    max-height: 100%;
+  }
+
+  .btn-resp-preview-post {
+    display: block;
+  }
+
+  .scheduling-page .preview {
+    display: none;
+  }
+
+  .configure .top-set {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-set .social-media {
+    width: 100%;
+    margin-bottom: 2.45rem;
+  }
+
+  .configure .publication-data {
+    width: 100%;
+  }
+
+  .input-label-file {
+    margin-top: 0;
+  }
+
+  .border-upload {
+    width: 100%;
+    height: 82px;
+  }
+
+  .border-upload img {
+    display: none;
+  }
+  .border-upload p {
+    display: none;
+  }
+
+  .footer .form-group {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 560px) {
+  .scheduling-page .configure {
+    max-width: 100vw;
+    max-height: 100%;
   }
 }

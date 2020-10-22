@@ -63,6 +63,10 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="resp-preview">
+                            <button class="btn-preview-post">Visualizar post</button>
+                        </div>
                     </div>
                     <div class="preview">
                             <div class="card card-preview">
@@ -126,12 +130,26 @@
                             </div>
                     </div>
             </section>
+
+            <div class="modal-overlay">
+                <div class="close-modal">
+                    <img class="close-icon" src="/images/close-icon.svg" alt="">
+                </div>
+
+                <div class="div-branca">
+                    <div class="div-branca-conteudo">
+                        <iframe src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            
     
             <footer>
                 <div class="form-group">
                     <a href="/" class="btn cancel">Cancelar</a>
-                  <button class="btn save">Salvar Rascunho</button>
-                  <button class="btn schedule">Agendar</button>
+                    <button class="btn save">Salvar Rascunho</button>
+                    <button class="btn schedule">Agendar</button>
                 </div>
             </footer>
 {% endblock %}
