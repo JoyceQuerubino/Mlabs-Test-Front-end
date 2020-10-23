@@ -1,40 +1,65 @@
 .listing-page {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  background: red;
 }
 
 .table {
-  width: 1355px;
+  width: 1365px;
+
+  background: var(--color-border-medium);
+  border: 3px solid var(--color-border-medium);
 
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 2fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-gap: 5px;
-  background-color: #eee;
-  grid-template-areas: "";
-  background: var(--color-border-medium);
+  grid-template-columns: 1fr 1fr 4fr 1.5fr 1fr 1fr;
+  grid-template-rows: 80px 80px;
+  grid-gap: 2px;
 }
 
-.table .colum-social-media {
-  background: yellow;
+.item {
+  color: var(--color-text-second);
+  padding: 0 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background: var(--color-menu);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.table .colum-text {
-  background: blue;
+
+.title {
+  margin-bottom: 3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  justify-content: flex-start;
 }
-.table .colum-media {
-  background: green;
+
+.logo-instagram {
+  width: 33px;
+  height: 33px;
+  background: var(--color-pink);
+  color: var(--color-menu);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.table .colum-date {
-  background: gray;
+
+.item-midia img {
+  width: 50px;
+  height: 50px;
 }
-.table .colum-action {
-  background: rebeccapurple;
-}
-.table .colum-stats {
-  background: olive;
+
+.item .text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  background: red;
 }
