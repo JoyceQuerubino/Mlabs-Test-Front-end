@@ -206,3 +206,33 @@ header {
 .text-post {
   color: var(--color-text-second);
 }
+
+/*Animações*/
+@keyframes motion-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes motionX {
+  0% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes motionY {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -30,6 +30,7 @@
   grid-template-columns: 1fr 1fr 4fr 1.5fr 1fr 1fr;
   grid-template-rows: 80px 80px;
   grid-gap: 2px;
+  animation: motion-opacity 0.5s linear, motionX 1s ease-in-out;
 }
 
 .item {

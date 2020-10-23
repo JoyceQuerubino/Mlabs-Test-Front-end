@@ -9,10 +9,14 @@
   align-items: center;
   justify-content: center;
 }
+.home-img {
+  animation: motion-opacity 0.5s linear;
+}
 
 .home-img img {
   width: 375px;
   height: 423px;
+  animation: motionX 1s ease-out;
 }
 
 .schedule-btn {
@@ -32,6 +36,7 @@
   line-height: 24px;
 }
 
+/*Responsividade*/
 @media (max-width: 560px) {
   .mini-menu {
     display: block;
