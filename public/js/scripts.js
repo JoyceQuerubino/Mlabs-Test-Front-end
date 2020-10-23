@@ -8,6 +8,17 @@ const esperando = document.getElementById("waiting-post");
 let checkInstagram = false;
 let checkLinkedin = false;
 
+function check() {
+  if (
+    (checkLinkedin || checkInstagram) &&
+    date.value.length > 0 &&
+    time.value.length > 0
+  ) {
+    btnSchedule.classList.remove("btn-disabled");
+    btnSchedule.removeAttribute("disabled");
+  }
+}
+
 btnInstagram.onclick = function () {
   this.classList.toggle("click-social-media");
   btnLinkedin.classList.toggle("btn-disabled");
@@ -18,6 +29,8 @@ btnInstagram.onclick = function () {
     checkInstagram = true;
     checkLinkedin = false;
   }
+
+  check();
 };
 
 btnLinkedin.onclick = function () {
@@ -30,6 +43,7 @@ btnLinkedin.onclick = function () {
     checkInstagram = false;
     checkLinkedin = true;
   }
+  check();
 };
 
 // Ação do botão de visualizar preview responsivo
@@ -63,13 +77,8 @@ const date = document.getElementById("date");
 const time = document.getElementById("time");
 
 form.addEventListener("input", () => {
-  if (
-    (checkLinkedin || checkInstagram) &&
-    date.value.length > 0 &&
-    time.value.length > 0
-  ) {
-    btnSchedule.removeAttribute("disabled");
-  }
+  console.log("aaa");
+  check();
 });
 
 //Ação do botão agendar

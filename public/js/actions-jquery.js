@@ -10,6 +10,9 @@ $(function () {
   $("#date").datepicker({
     onSelect: function (dateText, inst) {
       console.log(dateText);
+      if (check) {
+        check();
+      }
     },
     dateFormat: "dd/mm",
     dayNamesMin: ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SAB"],
