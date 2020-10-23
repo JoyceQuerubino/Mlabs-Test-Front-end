@@ -1,15 +1,28 @@
 .listing-page {
   width: 100vw;
   height: 100vh;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+
+  padding: 20px;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+
+.title-page {
+  width: 1365px;
+  color: var(--color-text-second);
+  font-size: 16px;
+  font-weight: 500;
+
+  margin-top: 106px;
+  margin-bottom: 30px;
 }
 
 .table {
   width: 1365px;
-
   background: var(--color-border-medium);
   border: 3px solid var(--color-border-medium);
 
@@ -22,19 +35,21 @@
 .item {
   color: var(--color-text-second);
   padding: 0 10px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  background: var(--color-menu);
-
+  background: var(--color-row);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.item:nth-child(-n + 6) {
+  background: var(--color-menu);
+}
+
 .title {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   justify-content: flex-start;
 }
@@ -45,6 +60,20 @@
   background: var(--color-pink);
   color: var(--color-menu);
   border-radius: 50%;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-linkedin {
+  width: 33px;
+  height: 33px;
+  background: var(--color-logo-linkedin2);
+  color: var(--color-menu);
+  border-radius: 50%;
+  font-size: 16px;
 
   display: flex;
   justify-content: center;
@@ -62,4 +91,8 @@
   line-height: 21px;
 
   background: red;
+}
+
+#linkedin {
+  display: none;
 }

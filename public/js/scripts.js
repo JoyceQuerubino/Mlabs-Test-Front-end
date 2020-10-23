@@ -8,7 +8,7 @@ const esperando = document.getElementById("waiting-post");
 let checkInstagram = false;
 let checkLinkedin = false;
 
-let verifica = (btnInstagram.onclick = function () {
+btnInstagram.onclick = function () {
   this.classList.toggle("click-social-media");
   btnLinkedin.classList.toggle("btn-disabled");
   postInstagram.classList.toggle("post-on");
@@ -18,7 +18,7 @@ let verifica = (btnInstagram.onclick = function () {
     checkInstagram = true;
     checkLinkedin = false;
   }
-});
+};
 
 btnLinkedin.onclick = function () {
   this.classList.toggle("click-social-media");
@@ -64,13 +64,11 @@ const time = document.getElementById("time");
 
 form.addEventListener("input", () => {
   if (checkLinkedin || (checkInstagram && time.value.length > 0)) {
-    console.log("OIIIIII");
     btnSchedule.removeAttribute("disabled");
   }
 });
 
 //Ação do botão agendar
-
 const alertModal = document.querySelector(".alert-modal");
 const btnOK = document.querySelector(".btn-ok");
 
@@ -80,5 +78,9 @@ btnSchedule.onclick = function () {
 
 // Direcionamento para a pagina de listagem
 btnOK.onclick = function () {
-  window.location.href = "/listagem";
+  if (checkInstagram) {
+    window.location.href = `/listagem?id=instagram`;
+  } else {
+    window.location.href = `/listagem?id=linkedin`;
+  }
 };

@@ -2,6 +2,8 @@
 
 {% block content %}        
             <section class="listing-page">
+
+                <h1 class="title-page">Listagem de agendamento</h1>
                 
                 <div class="table">
 
@@ -24,12 +26,14 @@
                         <p>Status</p>
                     </div>
 
-                    <div class="item social-media">
-                        <div class="logo-instagram">
-                            <a class="fab fa-instagram"></a>
+                    {% for dado in dados  %}   
+                    <div id={{dado.id}} class="item social-media">
+                        <div class="{{dado.class}}">
+                            <a class="{{dado.logo}}"></a>
                         </div>
                     </div>
-                    
+                    {% endfor %}
+                           
                     <div class="item item-midia">
                         <img src="https://images.unsplash.com/photo-1600025282051-ec0c6bf3137a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Imagem do post">
                     </div>

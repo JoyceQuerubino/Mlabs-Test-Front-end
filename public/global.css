@@ -19,8 +19,10 @@
   );
   --color-border-instagram: #ef2ea2;
   --color-logo-linkedin: #2e92ef;
+  --color-logo-linkedin2: #3a70da;
   --color-alert: #fafafa;
   --color-pink: #d60f86;
+  --color-row: #f2f2f2;
 }
 
 * {
