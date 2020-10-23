@@ -63,7 +63,11 @@ const date = document.getElementById("date");
 const time = document.getElementById("time");
 
 form.addEventListener("input", () => {
-  if (checkLinkedin || (checkInstagram && time.value.length > 0)) {
+  if (
+    (checkLinkedin || checkInstagram) &&
+    date.value.length > 0 &&
+    time.value.length > 0
+  ) {
     btnSchedule.removeAttribute("disabled");
   }
 });
