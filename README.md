@@ -55,9 +55,6 @@ git clone https://github.com/JoyceQuerubino/Mlabs-Test-Front-end
 
 # Instale as dependências
 npm init -y
-npm install express
-npm install -D nodemon
-npm install nunjucks
 
 # Executando o servidor
 npm start
