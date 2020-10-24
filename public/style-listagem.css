@@ -53,6 +53,10 @@
   justify-content: flex-start;
 }
 
+.center {
+  justify-content: center;
+}
+
 .logo-instagram {
   width: 33px;
   height: 33px;
@@ -88,13 +92,29 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+}
 
-  background: red;
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status::before {
+  content: " ";
+  width: 12px;
+  height: 12px;
+  background: var(--color-blue);
+  border-radius: 50%;
+  margin-right: 6px;
+
+  display: block;
 }
 
 #linkedin {
   display: none;
 }
+
 @media (max-width: 1375px) {
   .listing-page {
     align-items: flex-start;

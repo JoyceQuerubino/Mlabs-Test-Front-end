@@ -5,6 +5,9 @@ const postInstagram = document.getElementById("post-instagram");
 const postLinkedin = document.getElementById("post-linkedin");
 const esperando = document.getElementById("waiting-post");
 
+const date = document.getElementById("date");
+const time = document.getElementById("time");
+
 let checkInstagram = false;
 let checkLinkedin = false;
 
@@ -73,11 +76,8 @@ btnCloseModal.onclick = function () {
 // Requisitos para habilitar o botão agendar
 const form = document.querySelector(".date-time");
 const btnSchedule = document.getElementById("schedule");
-const date = document.getElementById("date");
-const time = document.getElementById("time");
 
 form.addEventListener("input", () => {
-  console.log("aaa");
   check();
 });
 
@@ -92,6 +92,7 @@ btnSchedule.onclick = function () {
 // Direcionamento para a pagina de listagem
 btnOK.onclick = function () {
   if (checkInstagram) {
+    console.log("OI");
     window.location.href = `/listagem?id=instagram`;
   } else {
     window.location.href = `/listagem?id=linkedin`;
