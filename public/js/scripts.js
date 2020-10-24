@@ -59,13 +59,17 @@ const linkedinModal = document.getElementById("post-linkedin2");
 
 btnModal.onclick = function () {
   if (checkInstagram) {
-    modalOverlay.classList.add("active");
+    ativaModal(this);
     instagramModal.classList.toggle("post-on");
   } else if (checkLinkedin) {
-    modalOverlay.classList.add("active");
+    ativaModal(this);
     linkedinModal.classList.toggle("post-on");
   }
 };
+
+function ativaModal() {
+  modalOverlay.classList.add("active");
+}
 
 btnCloseModal.onclick = function () {
   modalOverlay.classList.remove("active");
@@ -97,4 +101,12 @@ btnOK.onclick = function () {
   } else {
     window.location.href = `/listagem?id=linkedin`;
   }
+};
+
+//Pagina de listagem
+const ListePreview = document.querySelector("#listePreview");
+
+ListePreview.onclick = function () {
+  ativaModal(this);
+  console.log("Click");
 };

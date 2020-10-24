@@ -57,6 +57,10 @@
   justify-content: center;
 }
 
+.dateIcon {
+  padding: 3px;
+}
+
 .logo-instagram {
   width: 33px;
   height: 33px;
