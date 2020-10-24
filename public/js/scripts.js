@@ -8,6 +8,21 @@ const esperando = document.getElementById("waiting-post");
 const date = document.getElementById("date");
 const time = document.getElementById("time");
 
+const modalOverlay = document.querySelector(".modal-overlay");
+const btnModal = document.querySelector(".btn-preview-post");
+const btnCloseModal = document.querySelector(".close-icon");
+
+const instagramModal = document.getElementById("post-instagram2");
+const linkedinModal = document.getElementById("post-linkedin2");
+
+const form = document.querySelector(".date-time");
+const btnSchedule = document.getElementById("schedule");
+
+const alertModal = document.querySelector(".alert-modal");
+const btnOK = document.querySelector(".btn-ok");
+
+const vai = document.querySelector(".funciona");
+
 let checkInstagram = false;
 let checkLinkedin = false;
 
@@ -22,6 +37,15 @@ function check() {
   }
 }
 
+//Pagina de listagem
+if (vai) {
+  vai.addEventListener("click", function () {
+    console.log("VAIIIIIII");
+    ativaModal(this);
+  });
+}
+
+// Clique nas redes sociais
 btnInstagram.onclick = function () {
   this.classList.toggle("click-social-media");
   btnLinkedin.classList.toggle("btn-disabled");
@@ -50,13 +74,6 @@ btnLinkedin.onclick = function () {
 };
 
 // Ação do botão de visualizar preview responsivo
-const modalOverlay = document.querySelector(".modal-overlay");
-const btnModal = document.querySelector(".btn-preview-post");
-const btnCloseModal = document.querySelector(".close-icon");
-
-const instagramModal = document.getElementById("post-instagram2");
-const linkedinModal = document.getElementById("post-linkedin2");
-
 btnModal.onclick = function () {
   if (checkInstagram) {
     ativaModal(this);
@@ -78,17 +95,11 @@ btnCloseModal.onclick = function () {
 };
 
 // Requisitos para habilitar o botão agendar
-const form = document.querySelector(".date-time");
-const btnSchedule = document.getElementById("schedule");
-
 form.addEventListener("input", () => {
   check();
 });
 
 //Ação do botão agendar
-const alertModal = document.querySelector(".alert-modal");
-const btnOK = document.querySelector(".btn-ok");
-
 btnSchedule.onclick = function () {
   alertModal.classList.add("active");
 };
@@ -101,12 +112,4 @@ btnOK.onclick = function () {
   } else {
     window.location.href = `/listagem?id=linkedin`;
   }
-};
-
-//Pagina de listagem
-const ListePreview = document.querySelector("#listePreview");
-
-ListePreview.onclick = function () {
-  ativaModal(this);
-  console.log("Click");
 };

@@ -115,6 +115,10 @@
   display: block;
 }
 
+#errado {
+  cursor: pointer;
+}
+
 #linkedin {
   display: none;
 }

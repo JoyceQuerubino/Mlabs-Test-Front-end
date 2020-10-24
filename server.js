@@ -38,15 +38,5 @@ server.get("/agendamento", function (req, res) {
 
 // Rota da página de listagem
 server.get("/listagem", function (req, res) {
-  const id = req.query.id;
-
-  const redeSocial = postSocialMedia.find(function (listagem) {
-    return listagem.id == id;
-  });
-
-  if (!redeSocial) {
-    return res.send("Rede social não encontrada!");
-  }
-
   return res.render("listagem", { dados: postSocialMedia });
 });
