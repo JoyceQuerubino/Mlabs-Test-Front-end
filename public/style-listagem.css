@@ -2,8 +2,6 @@
   width: 100vw;
   height: 100vh;
   overflow-x: scroll;
-  scroll-behavior: smooth;
-
   padding: 20px;
 
   display: flex;
@@ -96,4 +94,9 @@
 
 #linkedin {
   display: none;
+}
+@media (max-width: 1375px) {
+  .listing-page {
+    align-items: flex-start;
+  }
 }
