@@ -61,13 +61,13 @@ Então após algumas pesquisas, descobri que era possível alterar esse input ut
 
 Como nunca trabalhei com o JQuery, decidi colocar os códigos neste formato separado em outro arquivo, chamado ‘actions-jquery.js’.
 
-(IMAGEM DO BOTÃO)
-
 **3 - Estilização do input do tipo data**
 
 Para estilização de campos input como data e hora, eu normalmente utilizava Material Design, porém como nesse projeto não foi permitida a utilização, procurei outras formas de fazer na internet e descobri o Query UI. E através de um pouco de aprendizagem e tempo, consegui com facilidade estilizar o calendário conforme solicitado no Design, porém não consegui remover as ‘bolinhas’ para troca de mês.
 
-(IMAGEM DO CALENDARIO E BOLINHAS)
+<h1 align = center>
+    <img src="https://ik.imagekit.io/joyceQuerubino/Mlabs/Calendario_ij-ljbqjU.png">
+</h1>
 
 **4 - Problemas ao usar o Query UI**
 Ao utilizar o Query UI, descobri que a entrada de dados, não é contabilizada por ‘inputs’, o que acabou me confundido já que para habilitar o botão de ‘Agendar’, eu criei um requisito que um botão de rede social, uma data e a hora estivessem inseridos, e esse requisito eram validados após os inputs.
@@ -81,11 +81,15 @@ Assim, independente da ordem que o usuário seguir, se os requisitos forem compr
 **5 - Adição de emojis**
 Para adicionar o botão de emojis na Textarea, eu utilizei uma biblioteca chamada **EmojioneArea**, porém fiz algumas modificações no arquivo para deixar mais próximo do layout do projeto.
 
-(IMAGEM do antes e depois)
+<h1 align = center>
+    <img src="https://ik.imagekit.io/joyceQuerubino/Mlabs/EmojiAntesDepois_6O0FrDbvR.png">
+</h1>
 
 A utilização dessa biblioteca acabou gerando um problema, porque o botão do emoji, sobrescrevia o calendário quando acionado e os modais.
 
-(Imagem do probblema)
+<h1 align = center>
+    <img src="https://ik.imagekit.io/joyceQuerubino/Mlabs/Problema_hiwhBUxoV.png">
+</h1>
 
 **6 - Problema na leitura da arvore de elementos**
 Na página de agendamento existe um botão de 'fechar' quando o modal é aberto, essa ação é bem simples de ser implementada. Porém, quando adicionei o código, ele não funcionava, mas ao movimentar essa função para o inicio do código em js, ela funcionava.
