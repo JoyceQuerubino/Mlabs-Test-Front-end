@@ -27,6 +27,8 @@ Já na escolha do layout, por conta da responsividade e do modelo das páginas d
 
 ### JavaScript
 
+Para melhorar a organização do projeto, assim como no CSS eu dividi os arquivos JS criando um para cada página. E além disso, separei as variáveis e constantes no início do código, e segui a ordem hierárquica das ações para criar as funções.
+
 ### Animações
 
 Para que o projeto tivesse uma interação mais fluída e fornecesse ao usuário uma melhor experiência, decidi adicionar algumas animações através do CSS. E quase adicionei uma animação no vetor da carinha do Modal de agendamento através do After Effects, porém o tempo não me permitiu.
@@ -77,18 +79,44 @@ Para resolver isso, eu criei uma função chamada ‘check’, responsável por 
 Assim, independente da ordem que o usuário seguir, se os requisitos forem compridos a validação acontece.
 
 **5 - Adição de emojis**
+Para adicionar o botão de emojis na Textarea, eu utilizei uma biblioteca chamada **EmojioneArea**, porém fiz algumas modificações no arquivo para deixar mais próximo do layout do projeto.
 
-**6 - Preview da rede social na página de listagem**
-Na página de listagem existe um botão para o preview da rede social, e por mais que essa interação seja simples, durante a execução do código a ação do click não funcionava. Isso porque na declaração da ação no JS eu estava colocando no final do arquivo, e percebi que ao colocar no topo do arquivo, logo depois da declaração as variáveis o mesmo funcionava, porém desabilitava a ação do click dos botões de redes sociais.
+(IMAGEM do antes e depois)
 
-Para solucionar esse problema de leitura da arvore de elementos, eu coloquei o código, no topo do javaScript, logo abaixo da função check e adicionei um ‘if’. Desta forma, ocorrendo um funcionamento correto e não desabilitando os outros botões.
-O mesmo aconteceu com o botão de fechar do modal de exibição, e para solucionar o problema, efetuei a mesma ação, movendo as linhas de códigos para o topo do arquivo js.
+A utilização dessa biblioteca acabou gerando um problema, porque o botão do emoji, sobrescrevia o calendário quando acionado e os modais.
 
-(CODIGO DESSA PARTE)
+(Imagem do probblema)
 
-**7- A página de listagem exibe apenas a rede social selecionada**
-Essa com toda a certeza foi um dos maiores desafios no desenvolvimento deste código.
+**6 - Problema na leitura da arvore de elementos**
+Na página de agendamento existe um botão de 'fechar' quando o modal é aberto, essa ação é bem simples de ser implementada. Porém, quando adicionei o código, ele não funcionava, mas ao movimentar essa função para o inicio do código em js, ela funcionava.
+
+Para solucionar esse problema de leitura da arvore de elementos, eu coloquei o código, no topo do javaScript, logo abaixo da função check. Desta forma, ocorrendo um funcionamento correto e não desabilitando os outros botões.
+
+```js
+btnCloseModal.onclick = function () {
+  modalOverlay.classList.remove("active");
+  linkedinModal.classList.remove("post-on");
+  instagramModal.classList.remove("post-on");
+};
+```
+
+**7 - A página de listagem exibe apenas a rede social selecionada**
+Esse com toda a certeza foi um dos maiores desafios no desenvolvimento deste código e que me rendeu longas horas de tentativa, erros, muito drama e pesquisas.
+
+A página de listagem, deve exibir apenas o ícone da rede social anteriormente selecionada, porém quando ocorre a troca de url, a pagina recebe um refresh e todos os dados são recarregados, desta forma eu não poderia utilizar nenhuma variável, porque seu valor seria zerado.
+
+Após algumas pesquisas, decidi utilizar a url da página, adicionando o código abaixo que abriria a página correta para cada rede social.
+
+Porém, obviamente não seria interessante criar uma página para cada tipo, e quanto mais eu pesquisava, mais interações complexas que eu nunca havia feito, eu tentava, como por exemplo a utilização de requisições AJAX, API Fatch, e muitas outras coisas. Porém nenhuma delas me ajudou a conseguir o resultado esperado.
+
+Então pesquisei formas de ‘ao carregar a página’, um evento ocorrer, porém na maioria dos fóruns e documentações era citado apenas o ‘window.location.href’, mas ele não faz exatamente isso.
+
+Mas para minha alegria, finalmente descobri através de um amigo a existência do ‘window.location.search.split’, que me permitiu pegar o valor da url, e comparar a qual rede social o final da url correspondia.
 
 ## Requisitos
 
 Todos os requisitos gerais e do nível junior foram cumpridos. O único detalhe não cumprido foi a estilização do input de hora. Onde o ícone ficou para o lado direito, e por conta do tempo curto acabei não conseguindo estilizar.
+
+---
+
+Ao final desse projeto, posso dizer que adquiri inúmeros novos conhecimentos e me desenvolvi ainda mais como programadora, fico muito grata de ter participado e espero ter apresentado um ótimo resultado final. 😁🚀

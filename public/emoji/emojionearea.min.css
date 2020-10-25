@@ -1,6 +1,6 @@
 .dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] {
   position: absolute;
-  z-index: 1000;
+  z-index: 5;
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;

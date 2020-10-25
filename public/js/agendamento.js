@@ -1,5 +1,6 @@
 const btnInstagram = document.getElementById("1");
 const btnLinkedin = document.getElementById("2");
+
 const postInstagram = document.getElementById("post-instagram");
 const postLinkedin = document.getElementById("post-linkedin");
 const esperando = document.getElementById("waiting-post");
@@ -20,8 +21,6 @@ const btnSchedule = document.getElementById("schedule");
 const alertModal = document.querySelector(".alert-modal");
 const btnOK = document.querySelector(".btn-ok");
 
-const listPreview = document.querySelector(".list-Preview");
-
 let checkInstagram = false;
 let checkLinkedin = false;
 
@@ -36,21 +35,15 @@ function check() {
   }
 }
 
-function ativaModal() {
-  modalOverlay.classList.add("active");
-}
-
+//Modal
 btnCloseModal.onclick = function () {
   modalOverlay.classList.remove("active");
   linkedinModal.classList.remove("post-on");
   instagramModal.classList.remove("post-on");
 };
 
-//Pagina de listagem
-if (listPreview) {
-  listPreview.addEventListener("click", function () {
-    ativaModal(this);
-  });
+function ativaModal() {
+  modalOverlay.classList.add("active");
 }
 
 // Clique nas redes sociais
