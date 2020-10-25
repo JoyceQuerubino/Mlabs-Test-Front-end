@@ -15,7 +15,7 @@ Além disso eu utilizei uma template engine chamada **Nunjucks** para possibilit
 No início pensei ser obrigatório o uso de uma API para consumir alguns dados, por isso já iniciei criando um servidor, mas depois percebi que este não era um requisito obrigatório, porém decidi continuar com ela para aprimorar meu projeto.  
 Essa API foi criada através do **Node.js** e utilizei o **Nodemon** para atualizar automaticamente meu projeto, eliminando o tempo de reiniciar o servidor a cada alteração.
 
-## CSS
+### CSS
 
 Para melhorar a organização do meu projeto, dividi o CSS em vários arquivos com o nome correspondente à sua respectiva página, além disso criei uma arquivo ‘global’ que apresentasse as configurações genéricas para todas as páginas, como botões, animações, e até variáveis de cor.
 
@@ -24,3 +24,22 @@ Optei por adicionar essas variáveis pensando no futuro ou crescimento deste pro
 Na organização do código, tentei manter o máximo possível um padrão na declaração ordenada e hierárquica dos parâmetros do CSS, desta forma a leitura e alteração dos dados
 
 Já na escolha do layout, por conta da responsividade e do modelo das páginas do projeto, decidi utilizar muito mais o display flex, sendo utilizado apenas na página da listagem de agendamento o display grid.
+
+### JavaScript
+
+### Animações
+
+Para que o projeto tivesse uma interação mais fluída e fornecesse ao usuário uma melhor experiência, decidi adicionar algumas animações através do CSS. E quase adicionei uma animação no vetor da carinha do Modal de agendamento através do After Effects, porém o tempo não me permitiu.
+
+### Responsividade
+
+Para que a responsividade fosse fluída de sua versão web até a mobile, dividi o projeto em 4 principais valores para quebra no Media Queries, sendo:
+
+- 1200px: O card de visualização do post é quebrado e enviado para baixo;
+- 670px: O card de visualização é removido e o botão para visualizar o post aparece;
+- 560px: O botão do rodapé ‘Salvar Rascunho’, é reduzido para ‘Salvar’;
+- 420px: Os botões do rodapé tem o tamanho de font e largura reduzidos.
+
+## Linhas de comentários
+
+Para o desenvolvimento desse projeto escolhi adicionar algumas linhas de comentário apenas no arquivo do JavaScript, para facilitar a compreensão do objetivo de cada função, não sei qual o padrão de Design Patterns aplicado pela empresa e espero não ter atrapalhado o código com eles.
