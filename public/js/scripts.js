@@ -1,4 +1,3 @@
-// Ações dos botões de redes sociais
 const btnInstagram = document.getElementById("1");
 const btnLinkedin = document.getElementById("2");
 const postInstagram = document.getElementById("post-instagram");
@@ -21,7 +20,7 @@ const btnSchedule = document.getElementById("schedule");
 const alertModal = document.querySelector(".alert-modal");
 const btnOK = document.querySelector(".btn-ok");
 
-const vai = document.querySelector(".funciona");
+const listPreview = document.querySelector(".list-Preview");
 
 let checkInstagram = false;
 let checkLinkedin = false;
@@ -37,10 +36,19 @@ function check() {
   }
 }
 
+function ativaModal() {
+  modalOverlay.classList.add("active");
+}
+
+btnCloseModal.onclick = function () {
+  modalOverlay.classList.remove("active");
+  linkedinModal.classList.remove("post-on");
+  instagramModal.classList.remove("post-on");
+};
+
 //Pagina de listagem
-if (vai) {
-  vai.addEventListener("click", function () {
-    console.log("VAIIIIIII");
+if (listPreview) {
+  listPreview.addEventListener("click", function () {
     ativaModal(this);
   });
 }
@@ -82,16 +90,6 @@ btnModal.onclick = function () {
     ativaModal(this);
     linkedinModal.classList.toggle("post-on");
   }
-};
-
-function ativaModal() {
-  modalOverlay.classList.add("active");
-}
-
-btnCloseModal.onclick = function () {
-  modalOverlay.classList.remove("active");
-  linkedinModal.classList.remove("post-on");
-  instagramModal.classList.remove("post-on");
 };
 
 // Requisitos para habilitar o botão agendar

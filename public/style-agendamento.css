@@ -209,6 +209,20 @@
   cursor: text;
 }
 
+.emojionearea-search-panel {
+  display: none;
+}
+.emojionearea-filters {
+  display: none;
+}
+
+.emojionearea
+  .emojionearea-picker
+  .emojionearea-search-panel
+  + .emojionearea-scroll-area {
+  height: 100%;
+}
+
 .card-upload-image {
   margin-top: 2.45rem;
 }

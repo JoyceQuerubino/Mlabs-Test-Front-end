@@ -43,7 +43,7 @@ O site é composto por 3 diferentes páginas:
 ### 📚 Bibliotecas utilizadas
 
 - Para adicionar os emoticons, utilizei a biblioteca **[EmojioneArea](https://github.com/mervick/emojionearea)**.
-  Os arquivos dessa biblioteca podem ser vistos na pasta **[libraryEmoticons]()**
+  Os arquivos dessa biblioteca podem ser vistos na pasta **[emoji]()**
 - Para estilizar os campos de calendário e data, utilizei a biblioteca **[JQuery UI](https://jqueryui.com/)**
 
 ## 🚀 Como executar o projeto

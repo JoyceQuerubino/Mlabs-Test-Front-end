@@ -34,3 +34,10 @@ $(function () {
     showOtherMonths: true,
   });
 });
+
+//Emojis
+$(document).ready(function () {
+  $("#myTextarea").emojioneArea({
+    pickerPosition: "bottom",
+  });
+});

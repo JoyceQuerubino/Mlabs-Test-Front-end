@@ -1,0 +1,29 @@
+.emojionearea-search-panel {
+  display: none;
+}
+.emojionearea-filters {
+  display: none;
+}
+
+.emojionearea
+  .emojionearea-picker.emojionearea-filters-position-top.emojionearea-search-position-top
+  .emojionearea-scroll-area {
+  bottom: auto;
+}
+
+.emojionearea
+  .emojionearea-picker
+  .emojionearea-search-panel
+  + .emojionearea-scroll-area {
+  height: 100%;
+}
+
+.teste {
+  width: 100px;
+  height: 100px;
+}
+
+.emojionearea,
+.emojionearea.form-control {
+  width: 100px;
+}
