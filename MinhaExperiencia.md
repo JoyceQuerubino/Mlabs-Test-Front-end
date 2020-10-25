@@ -43,3 +43,52 @@ Para que a responsividade fosse fluída de sua versão web até a mobile, dividi
 ## Linhas de comentários
 
 Para o desenvolvimento desse projeto escolhi adicionar algumas linhas de comentário apenas no arquivo do JavaScript, para facilitar a compreensão do objetivo de cada função, não sei qual o padrão de Design Patterns aplicado pela empresa e espero não ter atrapalhado o código com eles.
+
+## Dificuldades enfrentadas
+
+Durante a realização desse projeto eu listei 6 dificuldades principais que acabaram ocupando bastante tempo de desenvolvimento.
+
+**1 - Definição do layout da página de agendamento**
+
+Inicialmente eu pensei em criar o layout através do display grid, dividindo o conteúdo em partes, sendo: menu, configurações do post, visualização do post e rodapé. Porém, quando testei a responsividade, percebi que não estava tendo o efeito que eu gostaria. Então refiz o layout substituindo para ‘display flex’, mas seguindo a mesma divisão do conteúdo. Esse retrabalho acabou consumindo mais tempo tempo.
+
+**2 - Estilização do botão de upload de imagem**
+Durante meu aprendizado com desenvolvimento front-end, eu ainda não havia tido a oportunidade de trabalhar com campos do tipo “file”, e percebi da pior maneira que eles costumam ser campos bem restritos há estilizações.
+
+Então após algumas pesquisas, descobri que era possível alterar esse input utilizando o JQuery, porém eu nunca havia trabalhado com essa biblioteca. Mas mesmo assim não desisti, e encontrei com a ajuda de alguns fóruns uma solução para o problema.
+
+Como nunca trabalhei com o JQuery, decidi colocar os códigos neste formato separado em outro arquivo, chamado ‘actions-jquery.js’.
+
+(IMAGEM DO BOTÃO)
+
+**3 - Estilização do input do tipo data**
+
+Para estilização de campos input como data e hora, eu normalmente utilizava Material Design, porém como nesse projeto não foi permitida a utilização, procurei outras formas de fazer na internet e descobri o Query UI. E através de um pouco de aprendizagem e tempo, consegui com facilidade estilizar o calendário conforme solicitado no Design, porém não consegui remover as ‘bolinhas’ para troca de mês.
+
+(IMAGEM DO CALENDARIO E BOLINHAS)
+
+**4 - Problemas ao usar o Query UI**
+Ao utilizar o Query UI, descobri que a entrada de dados, não é contabilizada por ‘inputs’, o que acabou me confundido já que para habilitar o botão de ‘Agendar’, eu criei um requisito que um botão de rede social, uma data e a hora estivessem inseridos, e esse requisito eram validados após os inputs.
+
+O que fez com que os requisitos só fossem validados após o input da hora, sendo assim se o usuário fizesse na seguinte ordem: ‘Botão de rede social – data – hora’, iria funcionar, porém se o usuário esquecesse de colocar a data e quisesse adicionar depois da hora, não iria funcionar.
+
+Para resolver isso, eu criei uma função chamada ‘check’, responsável por efetuar a validação, e adicionei ela em todos os requisitos (nos botões de redes sociais, data e hora) E no final efetuei a ação no input do formulário.
+
+Assim, independente da ordem que o usuário seguir, se os requisitos forem compridos a validação acontece.
+
+**5 - Adição de emojis**
+
+**6 - Preview da rede social na página de listagem**
+Na página de listagem existe um botão para o preview da rede social, e por mais que essa interação seja simples, durante a execução do código a ação do click não funcionava. Isso porque na declaração da ação no JS eu estava colocando no final do arquivo, e percebi que ao colocar no topo do arquivo, logo depois da declaração as variáveis o mesmo funcionava, porém desabilitava a ação do click dos botões de redes sociais.
+
+Para solucionar esse problema de leitura da arvore de elementos, eu coloquei o código, no topo do javaScript, logo abaixo da função check e adicionei um ‘if’. Desta forma, ocorrendo um funcionamento correto e não desabilitando os outros botões.
+O mesmo aconteceu com o botão de fechar do modal de exibição, e para solucionar o problema, efetuei a mesma ação, movendo as linhas de códigos para o topo do arquivo js.
+
+(CODIGO DESSA PARTE)
+
+**7- A página de listagem exibe apenas a rede social selecionada**
+Essa com toda a certeza foi um dos maiores desafios no desenvolvimento deste código.
+
+## Requisitos
+
+Todos os requisitos gerais e do nível junior foram cumpridos. O único detalhe não cumprido foi a estilização do input de hora. Onde o ícone ficou para o lado direito, e por conta do tempo curto acabei não conseguindo estilizar.
