@@ -4,7 +4,7 @@ O projeto desenvolvido é um teste do processo seletivo para desenvolvedor Front
 
 O layout do projeto foi disponibilizado através do Figma, pelo **[link](https://www.figma.com/file/JYNYnwyXKa0N3m7myjF8Y4/v1)**.
 
-E é possível ver a versão através do link:
+E é possível ver a versão através do link: https://mlabs.netlify.app/
 
 ## 📱 Preview Mobile
 
@@ -15,7 +15,7 @@ E é possível ver a versão através do link:
 ## 🖥 Preview Web
 
 <h1 align = center>
-    <img src="public/images/imagem.png">
+    <img src="https://ik.imagekit.io/joyceQuerubino/Mlabs/video1_Vq3HfAM0O.gif">
 </h1>
 
 ## 📄 Páginas
