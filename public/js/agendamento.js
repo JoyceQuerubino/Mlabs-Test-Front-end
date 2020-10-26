@@ -77,12 +77,11 @@ btnLinkedin.onclick = function () {
 // Ação do botão de visualizar preview responsivo
 btnModal.onclick = function () {
   if (checkInstagram) {
-    ativaModal(this);
     instagramModal.classList.toggle("post-on");
   } else if (checkLinkedin) {
-    ativaModal(this);
     linkedinModal.classList.toggle("post-on");
   }
+  ativaModal(this);
 };
 
 // Requisitos para habilitar o botão agendar

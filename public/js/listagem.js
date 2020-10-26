@@ -4,7 +4,13 @@ const logoInstagram = document.getElementById("instagram");
 const logoLinkedin = document.getElementById("linkedin");
 
 //Pagina de listagem
+
 listPreview.addEventListener("click", function () {
+  if (logoInstagram.classList.contains("post-on")) {
+    instagramModal.classList.toggle("post-on");
+  } else if (logoLinkedin.classList.contains("post-on")) {
+    linkedinModal.classList.toggle("post-on");
+  }
   ativaModal(this);
 });
 
