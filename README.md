@@ -15,7 +15,7 @@ E é possível ver a versão através do link: https://mlabs.netlify.app/
 ## 🖥 Preview Web
 
 <h1 align = center>
-    <img src="https://ik.imagekit.io/joyceQuerubino/Mlabs/video1_Vq3HfAM0O.gif">
+    <img src="/github/video1.gif">
 </h1>
 
 ## 📄 Páginas
