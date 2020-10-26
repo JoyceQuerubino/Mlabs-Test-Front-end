@@ -129,4 +129,4 @@ Todos os requisitos gerais e do nível junior foram cumpridos. O único detalhe 
 
 ---
 
-Ao final desse projeto, posso dizer que adquiri inúmeros novos conhecimentos e me desenvolvi ainda mais como programadora, fico muito grata de ter participado e espero ter apresentado um ótimo resultado final. 😁🚀
+Ao final desse projeto, posso dizer que adquiri inúmeros novos conhecimentos e me desenvolvi ainda mais como programadora, fico muito grata de ter participado e espero ter apresentado um ótimo resultado final. 😁
