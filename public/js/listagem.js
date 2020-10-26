@@ -1,5 +1,8 @@
 const listPreview = document.querySelector(".list-Preview");
 
+const logoInstagram = document.getElementById("instagram");
+const logoLinkedin = document.getElementById("linkedin");
+
 //Pagina de listagem
 listPreview.addEventListener("click", function () {
   ativaModal(this);
@@ -10,11 +13,13 @@ window.addEventListener("load", () => {
 
   if (provider) {
     switch (provider) {
-      case "linkedIn":
+      case "linkedin":
+        logoLinkedin.classList.add("post-on");
         console.log("é linkedin");
         break;
 
       case "instagram":
+        logoInstagram.classList.add("post-on");
         console.log("é insta");
         break;
 

@@ -61,6 +61,15 @@
   padding: 3px;
 }
 
+.teste {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo-instagram {
   width: 33px;
   height: 33px;
@@ -115,8 +124,8 @@
   display: block;
 }
 
-#errado {
-  cursor: pointer;
+#instagram {
+  display: none;
 }
 
 #linkedin {
