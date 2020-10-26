@@ -117,7 +117,7 @@ Então pesquisei formas de ‘ao carregar a página’, um evento ocorrer, poré
 
 Mas para minha alegria, finalmente descobri através de um amigo a existência do ‘window.location.search.split’, que me permitiu pegar o valor da url, e comparar a qual rede social o final da url correspondia.
 
-** 8 - Publicação do site através do Netfly**
+**8 - Publicação do site através do Netfly**
 
 Para a publicação do teste, optei por realizar através do Netfly que é hoje a forma mais simples. Porém, após algumas tentativas, descobri que ele não consegue ler arquivos que contenham ‘Nunjucks’, assim o site não era publicado e era exibido apenas uma mensagem de erro.
 

@@ -144,7 +144,7 @@
 
 .modal-position {
   width: 1365px;
-  min-height: 70%;
+  min-height: 50%;
   display: flex;
   justify-content: flex-end;
 }
