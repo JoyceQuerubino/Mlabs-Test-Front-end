@@ -7,7 +7,6 @@ const mediaSocial = require("./db/social-networks");
 const postSocialMedia = require("./db/postSocialMedia");
 
 server.use(express.static("public"));
-
 server.set("view engine", "html");
 
 nunjucks.configure("views", {
