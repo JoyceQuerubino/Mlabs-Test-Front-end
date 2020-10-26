@@ -27,7 +27,7 @@ O site é composto por 3 diferentes páginas:
 - **Página de listagem de agendamento**: Essa página exibe uma listagem com todos os agendamentos realizados pelo usuário e algumas informações como: data, status, preview, etc.
 
 <h1 align = center>
-    <img src="https://ik.imagekit.io/joyceQuerubino/Mlabs/Conjuntopng_FAXpfCAce.png">
+    <img src="/github/Conjuntopng.png">
 </h1>
 
 ## 🛠 Tecnologias
