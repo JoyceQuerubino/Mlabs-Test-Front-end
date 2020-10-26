@@ -142,9 +142,19 @@
   margin: 10px auto;
 }
 
+.modal-position {
+  width: 1365px;
+  min-height: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .smaller-post {
   width: 481px;
   height: 489px;
+
+  position: initial;
+  justify-items: flex-end;
 }
 
 .smaller-content {
