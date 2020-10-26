@@ -97,7 +97,6 @@ btnSchedule.onclick = function () {
 // Direcionamento para a pagina de listagem
 btnOK.onclick = function () {
   if (checkInstagram) {
-    console.log("OI");
     window.location.href = `/listagem?id=instagram`;
   } else {
     window.location.href = `/listagem?id=linkedin`;

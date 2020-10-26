@@ -21,12 +21,10 @@ window.addEventListener("load", () => {
     switch (provider) {
       case "linkedin":
         logoLinkedin.classList.add("post-on");
-        console.log("é linkedin");
         break;
 
       case "instagram":
         logoInstagram.classList.add("post-on");
-        console.log("é insta");
         break;
 
       default:
