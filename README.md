@@ -9,7 +9,7 @@ E é possível ver a versão através do link: https://mlabs.netlify.app/
 ## 📱 Preview Mobile
 
 <h1 align = center>
-    <img src="/public/images/imagem.png">
+    <img src="/github/mobile2.gif">
 </h1>
 
 ## 🖥 Preview Web
